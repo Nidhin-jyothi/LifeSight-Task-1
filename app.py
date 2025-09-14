@@ -190,9 +190,9 @@ with st.sidebar.expander('Upload data (or leave empty to use files from current 
 # prepare data
 data = prepare_all(
     business_file if business_file else os.path.join("data", "business.csv") if os.path.exists("data/business.csv") else None,
-    facebook_file if facebook_file else os.path.join("data", "facebook.csv") if os.path.exists("data/facebook.csv") else None,
-    google_file   if google_file   else os.path.join("data", "google.csv")   if os.path.exists("data/google.csv")   else None,
-    tiktok_file   if tiktok_file   else os.path.join("data", "tiktok.csv")   if os.path.exists("data/tiktok.csv")   else None,
+    facebook_file if facebook_file else os.path.join("data", "Facebook.csv") if os.path.exists("data/facebook.csv") else None,
+    google_file   if google_file   else os.path.join("data", "Google.csv")   if os.path.exists("data/google.csv")   else None,
+    tiktok_file   if tiktok_file   else os.path.join("data", "TikTok.csv")   if os.path.exists("data/tiktok.csv")   else None,
 )
 
 business = data['business']
