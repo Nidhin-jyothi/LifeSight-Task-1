@@ -24,12 +24,9 @@ This project was created as part of an **assessment task**.
 ```
 .
 ├── app.py              # Main Streamlit app
-├── business.csv        # Business KPIs dataset
-├── facebook.csv        # Facebook marketing dataset
-├── google.csv          # Google marketing dataset
-├── tiktok.csv          # TikTok marketing dataset
+├── data                # datasets
 ├── requirements.txt    # Python dependencies
-└── README.md
+└── README.md           # documentation
 ```
 
 ---
