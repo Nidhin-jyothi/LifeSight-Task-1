@@ -71,8 +71,10 @@ streamlit run app.py
 
 ## 📸 Screenshots
 
-- Dashboard Overview
-- Campaign Performance
+- Dashboard Overview  
+  ![Dashboard Overview](screenshots/dashboard_overview.png)
+- Campaign Performance  
+  ![Channel Performance](screenshots/campaign_performance.png)
 
 ---
 
