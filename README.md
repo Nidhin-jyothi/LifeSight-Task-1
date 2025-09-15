@@ -79,4 +79,4 @@ streamlit run app.py
 
 The app is deployed on Streamlit Cloud.
 
-👉 **Live Demo**
+👉 **Live Demo:** [Link to the app](https://nidhin-jyothi-lifesight-task-1-app-lch4zg.streamlit.app/)
