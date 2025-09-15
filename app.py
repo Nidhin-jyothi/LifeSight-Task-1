@@ -187,11 +187,12 @@ with st.sidebar.expander('Upload data (or leave empty to use files from current 
     smoothing = st.slider('Moving average window (days, 0 = none)', 0, 14, 3)
     min_roas = st.number_input('Show campaigns with ROAS >=', min_value=0.0, value=0.0, step=0.1)
 
+# prepare data
 data = prepare_all(
-    business_file if business_file else "business.csv" if os.path.exists("business.csv") else None,
-    facebook_file if facebook_file else "facebook.csv" if os.path.exists("facebook.csv") else None,
-    google_file   if google_file   else "google.csv"   if os.path.exists("google.csv")   else None,
-    tiktok_file   if tiktok_file   else "tiktok.csv"   if os.path.exists("tiktok.csv")   else None,
+    business_file if business_file else os.path.join("data", "business.csv") if os.path.exists("data/business.csv") else None,
+    facebook_file if facebook_file else os.path.join("data", "facebook.csv") if os.path.exists("data/facebook.csv") else None,
+    google_file   if google_file   else os.path.join("data", "google.csv")   if os.path.exists("data/google.csv")   else None,
+    tiktok_file   if tiktok_file   else os.path.join("data", "tiktok.csv")   if os.path.exists("data/tiktok.csv")   else None,
 )
 
 business = data['business']
